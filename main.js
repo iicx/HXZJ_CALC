@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 				zjx[i] = Math.round((zj[1][i] - zj[0][i]) / zjx[0]);
 			}
 			calc = function (rank) {
-				zjx[0] = zj[2][0] - zj[0][0];
+				zjx[0] = rank - zj[0][0];
 				for (i = 1; i < 4; i += 1) {
 					zj[2][i] = Math.round(zj[0][i] + zjx[0] * zjx[i]);
 				}
