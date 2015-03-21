@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	
 	msgLabel = document.createElement('div');
 	msgLabel.id = 'msgLabel';
-	msgLabel.textContent = '版本:0.1.3 作者:百度贴吧@沧桑的菜菜';
+	msgLabel.textContent = '版本:0.1.6 作者:百度贴吧@沧桑的菜菜';
 	mainWin.appendChild(msgLabel);
 	mainWin.appendChild(btnBox);
 });

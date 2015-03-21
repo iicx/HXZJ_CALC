@@ -11,39 +11,39 @@ ul{list-style: none;padding: 0;margin: 0;}
 /*各种输入框+选择框*/
 input[type=text],input[type=password],input[type=email],select{
 	border:1px solid #ccc;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-	border-radius: 3px;
-	height: 32px;
-	padding: 6px 8px;
+	box-shadow: inset 0 0.06em 0.06em rgba(0,0,0,0.075);
+	border-radius: 0.2em;
+	height: 2em;
+	padding: 0.4em 0.5em;
 	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 	background-color: rgba(255,255,255,0.5);
 }
 input[type=text]:focus,input[type=password]:focus,input[type=email]:focus,select:focus{
 	border-color: #66AFE9;
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(102, 175, 233, 0.6);
+	box-shadow: 0px 0.06em 0.06em rgba(0, 0, 0, 0.075) inset, 0px 0px 0.5em rgba(102, 175, 233, 0.6);
 	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 input[type=text]:disabled,input[type=password]:disabled,input[type=email]:disabled,select:disabled{
 	background-color: rgba(200,200,200,0.5);
 }
 select{
-	padding: 2px 12px!important;
+	padding: 0.125em 0.75em!important;
 	width: auto!important;
-	font-size: 14px;
+	font-size: 0.875em;
 }
 
 /*按钮*/
 input[type=button],button,.btn{
-	height: 32px;
+	height: 2em;
 	border: 1px solid #ccc;
-	border-radius: 3px;
-	padding: 4px 12px 8px 12px;
+	border-radius: 0.2em;
+	padding: 0.25em 0.75em 0.5em 0.75em;
 	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 	background-color: rgba(255,255,255,0.5);
 }
 input[type=button]:hover, button:hover, .btn:hover,button.active{
 	border-color: #66AFE9;
-	box-shadow: 0px 0px 8px rgba(102, 175, 233, 0.6);
+	box-shadow: 0px 0px 0.5em rgba(102, 175, 233, 0.6);
 	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 	background-color: rgba(200,200,200,0.5);
 }
