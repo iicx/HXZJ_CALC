@@ -4,12 +4,10 @@ html, body, #wrapper{
 }
 
 body{
-	display: table;
 	background-image: url(bg1.jpg);
 }
 
 #wrapper{
-	display: table-cell;
 	vertical-align: middle;
 	background-image: url(bg2.png);
 	background-repeat: no-repeat;
@@ -17,7 +15,8 @@ body{
 }
 
 #main{
-	width: 300px;
+	width: 100%;
+	height: 100%;
 	margin: auto;
 	padding: 12px;
 	box-shadow: 0 0px 5px rgba(0,0,0,0.5);
@@ -63,4 +62,21 @@ h2{
 }
 .zj-data-btn>button:first-child{
 	margin-right: 2%;
+}
+
+
+
+@media (min-width:800px){
+	body{
+		display: table;
+	}
+
+	#wrapper{
+		display: table-cell;
+	}
+	
+	#main{
+		width: 300px;
+		height: auto;
+	}
 }
