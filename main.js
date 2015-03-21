@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-	var i, mainWin, inputs = [], btnBox, clrBtn, okBtn, msgLabel;
+	var i, mainWin, inputs = [], btnBox, clrBtn, okBtn, msgLabel, metaStr;
+	metaStr = '版本:0.1.6 作者:百度贴吧@沧桑的菜菜';
 	mainWin = document.getElementById('main');
 	for (i = 0; i < 3; i += 1) {
 		inputs.push(new ZjDataLine());
@@ -12,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		for (i = 0; i < 3; i += 1) {
 			inputs[i].clear();
 		}
-		msgLabel.textContent = '版本:0.1.3 作者:百度贴吧@沧桑的菜菜';
+		msgLabel.textContent = metaStr;
 	});
 	okBtn = document.createElement('button');
 	okBtn.textContent = '计算';
@@ -59,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	
 	msgLabel = document.createElement('div');
 	msgLabel.id = 'msgLabel';
-	msgLabel.textContent = '版本:0.1.6 作者:百度贴吧@沧桑的菜菜';
+	msgLabel.textContent = metaStr;
 	mainWin.appendChild(msgLabel);
 	mainWin.appendChild(btnBox);
 });
