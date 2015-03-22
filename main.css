@@ -3,28 +3,17 @@ html, body, #wrapper{
 	height: 100%;
 }
 
-body{
-	background-image: url(bg1.jpg);
-}
-
-#wrapper{
-	vertical-align: middle;
-	background-image: url(bg2.png);
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
 #main{
 	width: 100%;
 	height: 100%;
 	margin: auto;
 	padding: 0.75em;
-	box-shadow: 0 0px 0.3em rgba(0,0,0,0.5);
-	background-color: rgba(255,255,255,0.8);
+	
+	background-color: white;
 }
 
 #msgLabel{
-	height: 1.6em;
+	height: 2.5em;
 	color: #9d9d9d;
 	font-size: 0.8em;
 }
@@ -42,7 +31,7 @@ h2{
 	text-align: center;
 }
 .zj-data-line{
-	height: 2.5em;
+	height: 3em;
 }
 .zj-data-line>*{
 	margin-right: 2%;
@@ -69,14 +58,30 @@ h2{
 @media (min-width:800px){
 	body{
 		display: table;
+		background-image: url(bg1.jpg);
 	}
 
 	#wrapper{
 		display: table-cell;
+		vertical-align: middle;
+		background-image: url(bg2.png);
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 	
 	#main{
 		width: 18.75em;
+		box-shadow: 0 0 0.3em rgba(0,0,0,0.5);
+		background-color: rgba(255,255,255,0.8);
 		height: auto;
+	}
+	.zj-data-line{
+		height: 2.5em;
+	}
+	input[type=button],button,.btn{
+		height: 2em;
+	}
+	input[type=text],input[type=password],input[type=email],select{
+		height: 2em;
 	}
 }
