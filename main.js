@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 	var i, mainWin, inputs = [], btnBox, clrBtn, okBtn, msgLabel, metaStr;
-	metaStr = '版本:0.1.6 作者:百度贴吧@沧桑的菜菜';
+	metaStr = '版本:0.1.8 作者:百度贴吧@沧桑的菜菜';
 	mainWin = document.getElementById('main');
 	for (i = 0; i < 3; i += 1) {
 		inputs.push(new ZjDataLine());
