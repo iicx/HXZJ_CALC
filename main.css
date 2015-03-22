@@ -56,7 +56,7 @@ h2{
 
 
 
-@media (min-width:800px){
+@media (min-width:600px){
 	body{
 		display: table;
 		background-image: url(bg1.jpg);
