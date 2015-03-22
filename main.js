@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 			calc(zj[2][0]);
 			inputs[2].setData(zj[2]);
 			calc(70);
-			assessment = Math.round(zj[2][1] / 20 + zj[2][2] + zj[2][3] / 2);
+			assessment = Math.round(zj[2][1] / 20 + 582 * (Math.exp(zj[2][2] / 1000) - 1) + 209 * Math.log(zj[2][3] / 100 + 1));
 			msgLabel.innerHTML = '<span style="color:black">综合评分：' + assessment + '</span>';
 		} else {
 			msgLabel.innerHTML = '<span style="color:#fda4b2">请检查输入的数据</span>';

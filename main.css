@@ -13,7 +13,8 @@ html, body, #wrapper{
 }
 
 #msgLabel{
-	height: 2.5em;
+	height: 3em;
+	padding-top: 0.5em;
 	color: #9d9d9d;
 	font-size: 0.8em;
 }

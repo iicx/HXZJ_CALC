@@ -8,7 +8,6 @@ function ZjDataLine(disabled) {
 		textInput = document.createElement('input');
 		textInput.setAttribute('type', 'text');
 		textInput.setAttribute('name', 'data' + i);
-		textInput.addEventListener('keydown', this.validateNum(numLen[i]));
 		this.inputs.push(textInput);
 		this.html.appendChild(this.inputs[i]);
 	}
@@ -41,33 +40,4 @@ ZjDataLine.prototype.setData = function (data) {
 	for (i = 1; i < 4; i += 1) {
 		this.inputs[i].value = data[i].toString();
 	}
-};
-
-ZjDataLine.prototype.validateNum = function (numLen) {
-	var isNum, isFunc;
-	return function (e) {
-		isNum = function () {
-			if ((e.keyCode >= 48 && e.keyCode <= 57) ||
-			        (e.keyCode >= 96 && e.keyCode <= 105)) {
-				return true;
-			} else {
-				return false;
-			}
-		};
-		isFunc = function () {
-			if ((e.keyCode >= 37 && e.keyCode <= 40) ||
-			         e.keyCode === 8 || e.keyCode === 46 || e.keyCode === 9) {
-				return true;
-			} else {
-				return false;
-			}
-		};
-		if (!(isNum() || isFunc())) {
-			e.preventDefault();
-		} else {
-			if (e.target.value.length >= numLen && isNum()) {
-				e.preventDefault();
-			}
-		}
-	};
 };
